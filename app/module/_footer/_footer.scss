@@ -1,0 +1,26 @@
+.footer{
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  &__wrapper{
+    background-color: $wrapper;
+    z-index: 2;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  &__logo{
+    width: 300px;
+  }
+  &__title{
+    font-size: 18px;
+    @extend %OpenSans-Bold;
+    line-height: 1;
+    font-weight: 700;
+    color: $menu;
+    
+  }
+}

@@ -1,0 +1,21 @@
+$default: #000;
+$accent: #990099;
+$background: #ccc;
+$wrapper: rgba(0,0,0,0.7);
+$menu: #fff;
+
+
+%OpenSans-400{
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%OpenSans-italic{
+  font-family: 'OpenSans-Italic', sans-serif;
+  font-weight: 400;
+}
+
+%OpenSans-Bold{
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: 700;
+}
