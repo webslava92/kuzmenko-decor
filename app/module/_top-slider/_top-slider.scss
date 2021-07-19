@@ -1,0 +1,233 @@
+.top-slider{
+  position: relative;
+  &__item-1,
+  &__item-2,
+  &__item-3,
+  &__item-4{
+    width: 100%;
+    min-height: 400px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__item-1{
+    background-image: url('../images/top-slider/top-slider-img1.jpg');
+  }
+  &__item-2{
+    background-image: url('../images/top-slider/top-slider-img2.jpg');
+  }
+  &__item-3{
+    background-image: url('../images/top-slider/top-slider-img3.jpg');
+  }
+  &__item-4{
+    background-image: url('../images/top-slider/top-slider-img4.jpg');
+  }
+  &__content-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__content-box{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: calc(100vh - 100px);
+  }
+  &__content{
+    background-color: $wrapper;
+    margin: 40px 10px;
+    padding: 40px 20px;
+    max-width: 600px;
+    min-height: 300px;
+    margin-bottom: -75px;
+  }
+  &__master-name{
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    @extend %OpenSans-Bold;
+    color: $accent;
+    text-transform: uppercase;
+  }
+  &__profession{
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    color: $menu;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  &__title{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    @extend %OpenSans-Bold;
+    color: $menu;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__advantages-list{
+    padding-bottom: 50px;
+  }
+  &__advantages-item{
+    font-size: 16px;
+    line-height: 1.5;
+    color: $menu;
+    margin-left: 30px;
+    margin-bottom: 7px;
+    position: relative;
+    span{
+      position: absolute;
+      top: 3;
+      left: -30px;
+    }
+    path{
+      fill: $accent;
+    }
+  }
+  &__formbox{
+    width: 100px;
+    display: flex;
+    margin-top: 15px;
+  }
+  &__btn{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    background-color: $accent;
+    color: $menu;
+    text-transform: uppercase;
+    &:hover{
+      color: $accent;
+      background-color: $menu;
+      border: 1px solid $accent;
+    }
+  }
+  &__master-photo{
+    position: absolute;
+    bottom: -100px;
+    right: -15px;
+  }
+  &__master-img{
+    min-width: 100%;
+    height: calc(100vh - 100px);
+    min-height: 300px;
+    object-fit: contain;
+  }
+}
+
+
+@media(max-width: 1000px) {
+  .top-slider{
+    &__content{
+      max-width: 450px;
+    }
+    &__master-name{
+      font-size: 30px;
+    }
+    &__profession{
+      font-size: 16px;
+    }
+    &__title{
+      font-size: 18px;
+    }
+  }
+}
+
+@media(max-width: 900px) {
+  .top-slider{
+    &__item-1,
+    &__item-2,
+    &__item-3,
+    &__item-4{
+      height: 70vh;
+    }
+    &__content-box{
+      padding-top: 100px;
+    }
+    &__content{
+      max-width: 350px;
+      margin: 0;
+      height: calc(70vh - 100px);
+    }
+    &__master-name{
+      font-size: 24px;
+    }
+    &__profession{
+      font-size: 14px;
+    }
+    &__title{
+      font-size: 16px;
+    }
+    &__advantages-list{
+      display: none;
+    }
+    &__master-photo{
+      bottom: unset;
+    }
+    &__master-img{
+      height: calc(70vh - 100px);
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .top-slider{
+    &__content-box{
+      height: calc(70vh - 100px);
+    }
+    &__content{
+      max-width: 200px;
+    }
+    &__title{
+      span{
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .top-slider{
+    &__item-1,
+    &__item-2,
+    &__item-3,
+    &__item-4{
+      height: 60vh;
+      min-height: unset;
+    }
+    &__content-box{
+      height: calc(60vh - 100px);
+      min-height: unset;
+    }
+    &__content{
+      max-width: 200px;
+      padding: 20px 5px;
+      height: calc(60vh - 100px);
+      min-height: unset;
+    }
+    &__profession{
+      margin-top: 10px;
+    }
+    &__title{
+      span{
+        display: none;
+      }
+    }
+    &__master-photo{
+      top: unset;
+      bottom: -100px;
+    }
+    &__master-img{
+      height: calc(50vh - 100px);
+      min-height: unset;
+    }
+  }
+}

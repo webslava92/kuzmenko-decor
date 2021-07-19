@@ -15,12 +15,181 @@
   &__logo{
     width: 300px;
   }
+  &__logo-img{
+    height: 60px !important;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
   &__title{
     font-size: 18px;
     @extend %OpenSans-Bold;
     line-height: 1;
     font-weight: 700;
     color: $menu;
-    
+    padding: 40px 0 20px;
+  }
+  &__skills-item{
+    color: $menu;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin-left: 40px;
+    span{
+      top: 3;
+      left: -30px;
+      position: absolute;
+      path{
+        fill: $accent;
+      }
+    }
+  }
+  &__item{
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  &__link{
+    color: $menu;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    @extend %OpenSans-Bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: all .3s;
+    position: relative;
+    margin-bottom: 5px;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      padding-bottom: 5px;
+      span{
+        background-color: $accent;
+        transition: all .3s;
+        path{
+          transition: all .3s;
+          fill: $menu;
+        }
+      }
+    }
+    span{
+      position: absolute;
+      left: -45px;
+      top: -8px;
+      display: flex;
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 50%;
+      path{
+        fill: $accent;
+      }
+    }
+  }
+  &__menu,
+  &__contacts{
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  &__socials-item{
+    margin-top: 30px;
+  }
+  &__contacts-link{
+    color: $menu;
+    font-size: 18px;
+    line-height: 1;
+    @extend %OpenSans-Bold;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+    }
+  }
+  &__socials-list,
+  &__messengers-list{
+    display: flex;
+    align-items: center;
+  }
+  &__socials-item + .footer__socials-item,
+  &__messengers-item + .footer__messengers-item{
+    margin-left: 15px;
+  }
+  &__socials-link,
+  &__messengers-link{
+    display: flex;
+    font-size: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: all .3s;
+    margin-bottom: 15px;
+    &:hover{
+      background-color: $accent;
+      span{
+        transition: all .3s;
+      }
+    }
+    path{
+      fill: $accent;
+    }
+  }
+  &__socials-contrast,
+  &__messengers-contrast{
+    &:hover{
+      path{
+        fill: $menu;
+        transition: all .3s;
+      }
+    }
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 40px;
+  }
+  &__copy{
+    color: $menu;
+  }
+  &__design{
+    color: $menu;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer{
+    &__content{
+      display: block;
+      width: 100%;
+    }
+    &__menu,
+    &__contacts{
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer{
+    &__logo{
+      width: 250px;
+    }
+    &__bottom{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer{
+    &__skills-item{
+      font-size: 14px;
+    }
   }
 }

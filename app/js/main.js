@@ -12,4 +12,11 @@ $(function(){
     $('.menu__list').toggleClass('menu__list--active');
   });
 
+  $('.top-slider__list').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 3000
+  });
+
 });
