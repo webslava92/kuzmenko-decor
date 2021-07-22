@@ -1,5 +1,6 @@
 .top-slider{
   position: relative;
+  height: 100%;
   &__item-1,
   &__item-2,
   &__item-3,
@@ -22,6 +23,9 @@
   }
   &__item-4{
     background-image: url('../images/top-slider/top-slider-img4.jpg');
+  }
+  &__inner{
+    height: 100%;
   }
   &__content-wrapper{
     position: absolute;
@@ -72,7 +76,7 @@
     padding-bottom: 30px;
   }
   &__advantages-list{
-    padding-bottom: 50px;
+    padding-bottom: 20px !important;
   }
   &__advantages-item{
     font-size: 16px;
@@ -95,21 +99,6 @@
     display: flex;
     margin-top: 15px;
   }
-  &__btn{
-    display: inline-block;
-    font-size: 18px;
-    line-height: 1;
-    padding: 15px 25px;
-    border: 1px solid transparent;
-    background-color: $accent;
-    color: $menu;
-    text-transform: uppercase;
-    &:hover{
-      color: $accent;
-      background-color: $menu;
-      border: 1px solid $accent;
-    }
-  }
   &__master-photo{
     position: absolute;
     bottom: -100px;
@@ -120,6 +109,47 @@
     height: calc(100vh - 100px);
     min-height: 300px;
     object-fit: contain;
+  }
+  &__specifications-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__specifications-item{
+    text-align: center;
+    width: 200px;
+    padding: 50px 0;
+  }
+  &__specifications-item + .top-slider__specifications-item{
+    margin-left: 30px;
+  }
+  &__specifications-icon{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid $accent;
+    background-color: $menu;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    path{
+      fill: $accent;
+    }
+  }
+  &__specifications-value{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    @extend %OpenSans-Bold;
+    margin-top: 20px;
+    span{
+      display: block;
+      font-size: 16px;
+      line-height: 1;
+      color: $accent;
+      padding-top: 20px;
+    }
   }
 }
 
@@ -175,6 +205,12 @@
     &__master-img{
       height: calc(70vh - 100px);
     }
+    &__specifications-value{
+      font-size: 18px;
+      span{
+        font-size: 16px;
+      }
+    }
   }
 }
 
@@ -190,6 +226,13 @@
       span{
         display: none;
       }
+    }
+    &__specifications-list{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__specifications-item + .top-slider__specifications-item{
+      margin-left: 0;
     }
   }
 }
@@ -228,6 +271,9 @@
     &__master-img{
       height: calc(50vh - 100px);
       min-height: unset;
+    }
+    &__specifications-item{
+      padding: 30px 0;
     }
   }
 }

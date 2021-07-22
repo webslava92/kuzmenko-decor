@@ -21,3 +21,31 @@ body{
   height: 100px;
   object-fit: contain;
 }
+
+.btn{
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  @extend %OpenSans-Bold;
+  padding: 15px 25px;
+  border: 1px solid transparent;
+  background-color: $accent;
+  color: $menu;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:hover{
+    color: $accent;
+    background-color: $menu;
+    border: 1px solid $accent;
+  }
+}
+
+h3.title{
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  @extend %OpenSans-Bold;
+  color: $accent;
+  text-align: center;
+}

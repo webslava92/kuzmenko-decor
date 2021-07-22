@@ -2,15 +2,15 @@
   background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
+  z-index: 4;
   &__wrapper{
     background-color: $wrapper;
-    z-index: 2;
+    z-index: 5;
   }
   &__inner{
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 6;
   }
   &__logo{
     width: 300px;
