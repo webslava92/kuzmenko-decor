@@ -1,4 +1,41 @@
 <header class="header">
+  <button class="header__form-btn btn" href="#">Заказать</button>
+  <div class="header__formbox">
+    <div class="header__formbox-inner">
+      <a class="header__formbox-area" href="#header"></a>
+      <form class="header__form" method="POST">
+        <a class="header__formbox-btn" href="#header">
+        </a>
+        <div class="header__form-title">
+          Закажите расчет стоимости строительства
+        </div>
+        <input type="hidden" name="project_name" value="Кузьменко Декор">
+        <input type="hidden" name="admin_email" value="webslava92@ya.ru">
+        <input type="hidden" name="form_subject" value="header form">
+        <p class="header__input-text">Укажите Ваше имя</p>
+        <input class="header__call-name" id="name" name="Имя клиента" type="text" placeholder="Имя">
+        <p class="header__input-text">Укажите номер Вашего телефона</p>
+        <input class="header__call-phone" id="phone" name="Телефон клиента" type="text" placeholder="+7 (978) 750 65 57">
+        <p class="header__input-text">Укажите удобное время для звонка</p>
+        <select class="header__call-time" id="time" name="Удобное для звонка время" type="text">
+          <option value="8:00">8:00</option>
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+          <option value="19:00">19:00</option>
+          <option value="20:00">20:00</option>
+        </select>
+        <input class="header__input-btn btn" type="submit" value="Получить расчет">
+      </form>
+    </div>
+  </div>
   <div class="header__wrapper">
     <div class="container">
       <div class="header__box">
@@ -22,17 +59,17 @@
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#portfolio">
                     Портфолио
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#price">
                     Цены
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#reviews">
                     Отзывы
                   </a>
                 </li>

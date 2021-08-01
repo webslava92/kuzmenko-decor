@@ -95,6 +95,7 @@
   }
   &__socials-item{
     margin-top: 30px;
+    cursor: pointer;
   }
   &__contacts-link{
     color: $menu;
@@ -105,6 +106,9 @@
     &:hover{
       color: $accent;
     }
+  }
+  &__messengers-item{
+    cursor: pointer;
   }
   &__socials-list,
   &__messengers-list{

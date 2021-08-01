@@ -1,14 +1,23 @@
 .portfolio{
-  padding: 60px 0;
+  background-image: url('../images/bg_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  &__wrapper{
+    background-color: $wrapper;
+    padding: 60px 0;
+  }
   &__title{
     padding-bottom: 20px;
   }
   &__text{
     display: flex;
     width: 80%;
+    font-size: 18px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 20px;
+    color: $menu;
   }
   &__slider-wrapper{
     position: relative;
@@ -17,8 +26,10 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 30px;
-    left: 45%;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-transform: uppercase;
     z-index: 1002;
     border-radius: 50%;
@@ -57,6 +68,10 @@
     background-color: $menu !important;
     cursor: pointer;
     z-index: 1000;
+    transition: all .3s;
+    &:hover{
+      background-color: $accent !important;
+    }
   }
   .portfolio__slider .slick-prev{
     position: absolute;
@@ -91,5 +106,71 @@
   }
   &__slider-btn{
     text-align: center;
+  }
+  &__data-wrapper{
+    background-color: $menu;
+  }
+  &__data-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__data-item{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    @extend %OpenSans-Bold;
+    color: $accent;
+    width: 200px;
+    text-align: center;
+    padding: 60px 0;
+    span{
+      font-size: 24px;
+      line-height: 30px;
+      color: $default;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+  &__data-item + .portfolio__data-item{
+    margin-left: 30px;
+  }
+}
+
+@media(max-width: 900px) {
+  .portfolio{
+    &__data-item{
+      font-size: 14px;
+      span{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .portfolio{
+    &__data-item{
+      padding: 40px 0;
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .portfolio{
+    &__data-list{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__data-item + .portfolio__data-item{
+      margin-left: 0;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .portfolio{
+    &__data-item{
+      padding: 15px 0;
+    }
   }
 }

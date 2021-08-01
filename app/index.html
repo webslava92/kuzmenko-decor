@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мастер-декоратор - Кузьменко Денис - нанесение декоративной штукатурки в Крыму и Севастополе</title>
+  <title>Мастер-декоратор - Кузьменко Денис - нанесение декоративной штукатурки в Севастополе и в Крыму</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon.png">
@@ -11,6 +11,43 @@
 <body>
   
 <header class="header">
+  <button class="header__form-btn btn" href="#">Заказать</button>
+  <div class="header__formbox">
+    <div class="header__formbox-inner">
+      <a class="header__formbox-area" href="#header"></a>
+      <form class="header__form" method="POST">
+        <a class="header__formbox-btn" href="#header">
+        </a>
+        <div class="header__form-title">
+          Закажите расчет стоимости строительства
+        </div>
+        <input type="hidden" name="project_name" value="Кузьменко Декор">
+        <input type="hidden" name="admin_email" value="webslava92@ya.ru">
+        <input type="hidden" name="form_subject" value="header form">
+        <p class="header__input-text">Укажите Ваше имя</p>
+        <input class="header__call-name" id="name" name="Имя клиента" type="text" placeholder="Имя">
+        <p class="header__input-text">Укажите номер Вашего телефона</p>
+        <input class="header__call-phone" id="phone" name="Телефон клиента" type="text" placeholder="+7 (978) 750 65 57">
+        <p class="header__input-text">Укажите удобное время для звонка</p>
+        <select class="header__call-time" id="time" name="Удобное для звонка время" type="text">
+          <option value="8:00">8:00</option>
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+          <option value="19:00">19:00</option>
+          <option value="20:00">20:00</option>
+        </select>
+        <input class="header__input-btn btn" type="submit" value="Получить расчет">
+      </form>
+    </div>
+  </div>
   <div class="header__wrapper">
     <div class="container">
       <div class="header__box">
@@ -34,17 +71,17 @@
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#portfolio">
                     Портфолио
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#price">
                     Цены
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">
+                  <a class="menu__link" href="#reviews">
                     Отзывы
                   </a>
                 </li>
@@ -151,9 +188,9 @@
               </li>
             </ul>
             <div class="top-slider__formbox">
-              <a class="top-slider__btn btn" href="#">
+              <button class="top-slider__btn btn">
                 Заказать
-              </a>
+              </button>
             </div>
           </div>
           <div class="top-slider__master-photo">
@@ -246,129 +283,581 @@
     </div>
   </div>
 </section>
-    <section class="portfolio">
-  <div class="container">
-    <div class="portfolio__inner">
-      <h3 class="portfolio__title title">
-        Портфолио
-      </h3>
-      <p class="portfolio__text">
-        Декоративная штукатурка - это отличный способ красиво оформить любое помещение.
-        При этом нанесение декоративной штукатурки это сложный процесс, требующий большого опыта и аккуратности мастера. Нужно знать и соблюдать все технологические процессы.
-        Правильный подбор материала и правильное нанесение декоративной штукатурки не только поменяет внешний вид помещения, но еще и скроет дефекты, которые могли допустить строители. 
-      </p>
-      <div class="portfolio__slider-wrapper">
-        <div class="portfolio__slider-slide-icon">
-          <img src="images/icons/hand-sliding.png" alt="Листайте">
-          <p>Листайте</p>
+    <section class="portfolio" id="portfolio">
+  <div class="portfolio__wrapper">
+    <div class="container">
+      <div class="portfolio__inner">
+        <h3 class="portfolio__title title">
+          Портфолио
+        </h3>
+        <p class="portfolio__text">
+          Декоративная штукатурка - это отличный способ красиво оформить любое помещение.
+          При этом нанесение декоративной штукатурки это сложный процесс, требующий большого опыта и аккуратности мастера.
+          Нужно знать и соблюдать все технологические процессы.
+          Правильный подбор материала и правильное нанесение декоративной штукатурки не только поменяет внешний вид
+          помещения, но еще и скроет дефекты, которые могли допустить строители.
+        </p>
+        <div class="portfolio__slider-wrapper">
+          <div class="portfolio__slider-slide-icon wow animate__animated animate__wobble" data-wow-duration="2.5s" data-wow-offset="10" data-wow-iteration="10">
+            <img src="images/icons/hand-sliding.png" alt="Листайте">
+            <p>Листайте</p>
+          </div>
+          <ul class="portfolio__slider">
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura1.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura1.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura2.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura2.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura3.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura3.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura4.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura4.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura5.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura5.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura6.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura6.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura7.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura7.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura8.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura8.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura9.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura9.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura10.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura10.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura11.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura11.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura12.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura12.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura13.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura13.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura14.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura14.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura15.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura15.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura16.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura16.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura17.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura17.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura18.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura18.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura19.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura19.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura20.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura20.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura21.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura21.jpg" alt="Фото работы">
+              </a>
+            </li><li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura22.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura22.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura23.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura23.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura24.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura24.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura25.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura25.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura26.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura26.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura27.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura27.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura28.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura28.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura29.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura29.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura30.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura30.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura31.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura31.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura32.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura32.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura33.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura33.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura34.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura34.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura35.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura35.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura36.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura36.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura37.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura37.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura38.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura38.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura39.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura39.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura40.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura40.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura41.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura41.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura42.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura42.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura43.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura43.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura44.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura44.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura45.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura45.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura46.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura46.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura47.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura47.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura48.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura48.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura49.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura49.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura50.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura50.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura51.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura51.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura52.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura52.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura53.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura53.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura54.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura54.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura55.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura55.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura56.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura56.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura57.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura57.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura58.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura58.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura59.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura59.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura60.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura60.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura61.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura61.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura62.jpg"data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura62.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura63.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura63.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura64.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura64.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura65.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura65.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura66.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura66.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura67.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura67.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura68.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura68.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura69.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura69.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura70.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura70.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura71.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura71.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura72.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura72.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura73.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura73.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura74.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura74.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura75.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura75.jpg" alt="Фото работы">
+              </a>
+            </li>
+            <li class="portfolio__slider-item">
+              <a class="portfolio__slider-link" href="images/factures/factura76.jpg" data-fancybox="gallery">
+                <img class="portfolio__slider-img" src="images/factures/factura76.jpg" alt="Фото работы">
+              </a>
+            </li>
+          </ul>
+          <div class="portfolio__slider-btn">
+            <button class="portfolio__btn btn" href="#">
+              Заказать отделку
+            </button>
+          </div>
         </div>
-        <ul class="portfolio__slider">
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura1.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura1.jpg" alt="Фото работы">
-            </a>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio__data-wrapper">
+    <div class="container">
+      <div class="portfolio__data">
+        <ul class="portfolio__data-list">
+          <li class="portfolio__data-item">
+            <span>15+ лет</span>
+            Опыт работы
           </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura2.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura2.jpg" alt="Фото работы">
-            </a>
+          <li class="portfolio__data-item">
+            <span>100%</span>
+            Соблюдение сроков
           </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura3.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura3.jpg" alt="Фото работы">
-            </a>
+          <li class="portfolio__data-item">
+            <span>160+</span>
+            Выполненных работ
           </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura4.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura4.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura5.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura5.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura6.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura6.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura7.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura7.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura8.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura8.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura9.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura9.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura10.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura10.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura11.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura11.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura12.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura12.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura13.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura13.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura14.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura14.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura15.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura15.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura16.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura16.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura17.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura17.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura18.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura18.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura19.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura19.jpg" alt="Фото работы">
-            </a>
-          </li>
-          <li class="portfolio__slider-item">
-            <a class="portfolio__slider-link" href="images/factures/factura20.jpg">
-              <img class="portfolio__slider-img" src="images/factures/factura20.jpg" alt="Фото работы">
-            </a>
+          <li class="portfolio__data-item">
+            <span>12</span>
+            Месяцев гарантия
           </li>
         </ul>
-        <div class="portfolio__slider-btn">
-          <a class="portfolio__btn btn" href="#">
-            Заказать отделку
-          </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="price" id="price">
+  <div class="price__wrapper">
+    <div class="container">
+
+      <div class="price__inner">
+        <h3 class="price__title title">
+          Прайс
+        </h3>
+        <div class="price__content">
+          <p class="price__text">
+            Стоимость нанесения декоративной штукатурки и декоративных красок зависит от сложности рисунка, качества
+            используемых
+            материалов и объема работ. <br>
+            Ориентировочная стоимость работ, может состоять из цены самих услуг по нанесению декоративной штукатурки или
+            же
+            быть
+            полной, т.е. в которую включены все материалы и инструменты, которые необходимы в работе мастер по нанесению
+            штукатурки. <br>
+            Ориентировочный прайс-лист на мои услуги
+          </p>
+          <div class="price__pricebox">
+            <div class="price__item">
+              <p class="price__item-title">
+                Работа <br> (без материалов)
+              </p>
+              <p class="price__value">
+                <span>от 600 р</span>
+                Цена за м2
+              </p>
+              <a href="#" class="price__item-btn btn">
+                Заказать
+              </a>
+            </div>
+            <div class="price__item">
+              <p class="price__item-title">
+                Работа <br> (c материалами)
+              </p>
+              <p class="price__value">
+                <span>от 1 000 р</span>
+                Цена за м2
+              </p>
+              <a href="#" class="price__item-btn btn">
+                Заказать
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="materials">
+  <div class="container">
+    <div class="materials__inner">
+      <h3 class="materials__title title">
+        Проверенные материалы
+      </h3>
+      <p class="materials__text">
+        Имеющийся опыт позволяет выполнить работу любыми материалами имеющимися у заказчика. Но хотелось бы выделить наиболее качественные материалы, с помощью которых можно достичь максимального соответствия требованим заказчика. Как эстетическим, так и экономическим, а также требованиям к износостойкости и последующей ремонтопригодности.
+      </p>
+      <div class="materials__slider">
+        <ul class="materials__list">
+          <li class="materials__item">
+            <img class="materials__img" src="images/materials/pratta.png" alt="Материалы">
+          </li>
+          <li class="materials__item">
+            <img class="materials__img" src="images/materials/oikos.jpg" alt="Материалы">
+          </li>
+          <li class="materials__item">
+            <img class="materials__img" src="images/materials/decorazza.png" alt="Материалы">
+          </li>
+          <li class="materials__item">
+            <img class="materials__img" src="images/materials/sto.jpg" alt="Материалы">
+          </li>
+          <li class="materials__item">
+            <img class="materials__img" src="images/materials/spiver.png" alt="Материалы">
+          </li>
+          <li class="materials__item">
+            <img class="materials__img" src="images/materials/sanmarko.jpg" alt="Материалы">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews__inner">
+      <h3 class="reviews__title title">
+        Отзывы
+      </h3>
+      <p class="reviews__text">
+        Отзыв клиента - лучшая оценка любого мастера. Вот некоторые из таких оценок))
+      </p>
+      <div class="reviews__slider">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <img class="reviews__img" src="images/clients/photo1.jpg" alt="Фото клиента">
+            <div class="reviews__item-content">
+              <p class="reviews__item-name">
+                Юлия
+              </p>
+              <p class="reviews__item-text">
+                Очень благодарна Денису за его работу! Быстро. Аккуратно. Красиво. Настоящий мастер своего дела! 
+              </p>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <img class="reviews__img" src="images/clients/photo2.jpg" alt="Фото клиента">
+            <div class="reviews__item-content">
+              <p class="reviews__item-name">
+                Артем
+              </p>
+              <p class="reviews__item-text">
+                Больше всего впечатлила скорость выполнения работ. И это при высоком качестве нанесения! Скажу честно - даже не заметил когда он успел все сделать))
+              </p>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <img class="reviews__img" src="images/clients/photo3.jpg" alt="Фото клиента">
+            <div class="reviews__item-content">
+              <p class="reviews__item-name">
+                Семен
+              </p>
+              <p class="reviews__item-text">
+                По роду деятельности (строительство и отделка) приходилось сталкиваться с множеством мастеров по декоративным материалам. Но работа Дениса меня приятно удивила. Как качество так и высокая скорость! Просто пушка! Просто ставишь человеку задачу и он ее решает, при этом не возникает лишних вопросов - все по делу и четко! 
+              </p>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <img class="reviews__img" src="images/clients/photo4.jpg" alt="Фото клиента">
+            <div class="reviews__item-content">
+              <p class="reviews__item-name">
+                Виктория
+              </p>
+              <p class="reviews__item-text">
+                Мастер которому можно доверять! Сказал - сделал. Получили именно то, что ожидали и даже больше. Очень впечатлила работа. Просто метеор! Грузчики при заносе мебели декоративку повредили в нескольких местах. Мастер устранил все так, что не осталось и малейшего следа. Очень рекомендую!
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -470,7 +959,7 @@
                   </a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">
+                  <a class="footer__link" href="#portfolio">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
                         height="25px" viewBox="0 0 25 25" version="1.1">
@@ -484,7 +973,7 @@
                   </a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">
+                  <a class="footer__link" href="#price">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
                         height="25px" viewBox="0 0 25 25" version="1.1">
@@ -498,7 +987,7 @@
                   </a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link" href="#">
+                  <a class="footer__link" href="#reviews">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
                         height="25px" viewBox="0 0 25 25" version="1.1">
@@ -516,19 +1005,19 @@
             <div class="footer__contacts">
               <ul class="footer__contacts-list">
                 <li class="footer__contacts-item">
-                  <a class="footer__contacts-link" href="tel:79787506557">
+                  <a class="footer__contacts-link" href="tel:79787506557" onclick="window.open('tel:+79787506557')">
                     +7 (978) 750 65 57
                   </a>
                 </li>
                 <li class="footer__contacts-item">
-                  <a class="footer__contacts-link" href="mailto:wisedeny@gmail.com">
+                  <a class="footer__contacts-link" href="mailto:wisedeny@gmail.com" onclick="window.open('mailto:wisedeny@gmail.com')">
                     wisedeny@gmail.com
                   </a>
                 </li>
               </ul>
               <ul class="footer__socials-list">
                 <li class="footer__socials-item">
-                  <a class="footer__socials-link footer__socials-contrast" href="#">
+                  <a class="footer__socials-link footer__socials-contrast" target="_blank" rel="nofollow noopener" onclick="window.open('https://www.instagram.com/denis.kuzmenko.decor/')">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
                       height="27px" viewBox="0 0 25 25" version="1.1">
                       <g>
@@ -543,7 +1032,7 @@
                   </a>
                 </li>
                 <li class="footer__socials-item">
-                  <a class="footer__socials-link" href="#">
+                  <a class="footer__socials-link" target="_blank" rel="nofollow noopener" onclick="window.open('https://www.facebook.com/Denis-Kuzmenko-111647773693407/')">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
                       height="27px" viewBox="0 0 25 25" version="1.1">
                       <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
@@ -554,7 +1043,7 @@
                   </a>
                 </li>
                 <li class="footer__socials-item">
-                  <a class="footer__socials-link" href="#">
+                  <a class="footer__socials-link" target="_blank" rel="nofollow noopener" onclick="window.open('https://vk.com/id31997223')">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
                       height="27px" viewBox="0 0 25 25" version="1.1">
                       <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
@@ -567,7 +1056,7 @@
               </ul>
               <ul class="footer__messengers-list">
                 <li class="footer__messengers-item">
-                  <a class="footer__messengers-link footer__messengers-contrast" href="#">
+                  <a class="footer__messengers-link footer__messengers-contrast" https://wa.me/79787506557" target="_blank" rel="nofollow noopener" onclick="window.open('https://wa.me/79787506557')">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
                       height="27px" viewBox="0 0 20 20" version="1.1">
                       <g>
@@ -580,7 +1069,7 @@
                   </a>
                 </li>
                 <li class="footer__messengers-item">
-                  <a class="footer__messengers-link footer__messengers-contrast" href="#">
+                  <a class="footer__messengers-link footer__messengers-contrast" href="https://viber.click/79787506557" target="_blank" rel="nofollow noopener" onclick="window.open('https://viber.click/79787506557')">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
                       height="27px" viewBox="0 0 20 20" version="1.1">
                       <g>
@@ -599,7 +1088,7 @@
                   </a>
                 </li>
                 <li class="footer__messengers-item">
-                  <a class="footer__messengers-link" href="#">
+                  <a class="footer__messengers-link" href="https://tlgg.ru/79787506557" target="_blank" rel="nofollow noopener" onclick="window.open('https://tlgg.ru/79787506557')">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="27px" viewBox="0 0 20 20" version="1.1">
                       <g>
                         <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
@@ -626,8 +1115,6 @@
   <script src="js/main.min.js"></script>
 </body>
 </html>
-
-
 
 
 

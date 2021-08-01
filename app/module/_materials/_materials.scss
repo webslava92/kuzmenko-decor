@@ -1,0 +1,92 @@
+.materials{
+  padding-top: 60px;
+  &__inner{
+    padding-bottom: 60px;
+    border-bottom: 2px solid $background;
+  }
+  &__title{
+    padding-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 1.5;
+    color: $default;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  &__slider{
+    padding: 0 50px;
+  }
+  .slick-arrow{
+    font-size: 0;
+    line-height: 0;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      background-color: $accent !important;
+    }
+  }
+  .materials__list .slick-prev{
+    position: absolute;
+    bottom: 30%;
+    left: -50px;
+  }
+  .slick-prev::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../images/icons/arrow.svg') 0 0 / 100% no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    z-index: 10;
+  }
+  .materials__list .slick-next{
+    position: absolute;
+    bottom: 30%;
+    right: -50px;
+  }
+  .slick-next::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../images/icons/arrow.svg') 0 0 / 100% no-repeat;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    z-index: 10;
+  }
+  &__item{
+    display: flex !important;
+    width: 200px;
+    height: 110px;
+    padding: 0 15px;
+  }
+  &__img{
+    margin: auto auto;
+    object-fit: contain;
+  }
+}
+
+@media(max-width: 800px) {
+  .materials{
+    padding: 30px 0;
+    &__text{
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .materials{
+    &__text{
+      font-size: 16px;
+    }
+  }
+}
