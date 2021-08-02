@@ -10,7 +10,7 @@ $(function(){
     $('.header__formbox').toggleClass('header__formbox--active');
   });
 
-  $('.top-slider__btn, .portfolio__btn, price__item-btn').on('click', function () {
+  $('.top-slider__btn, .portfolio__btn, .price__item-btn').on('click', function () {
     $('header__formbox').addClass('header__formbox--active');
     $('.header__formbox').toggleClass('header__formbox--active');
   });

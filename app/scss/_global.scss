@@ -34,6 +34,7 @@ body{
   color: $menu;
   text-transform: uppercase;
   transition: all .3s;
+  cursor: pointer;
   &:hover{
     color: $accent;
     background-color: $menu;
